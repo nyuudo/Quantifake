@@ -22,5 +22,31 @@ $navbar-light-toggler-border-color: none;
 $link-hover-color: $danger;
 $link-color: $secondary;
 
+/////// EJERCICI 2
+
+// custom tabs
+.nav-tabs .nav-link-nyuudo {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 4px white;
+  border-radius: none;
+  background-color: white;
+  margin: 0.5em 0.5em 0 0.5em;
+  padding: 0.5rem;
+}
+
+.nav-tabs .nav-link-nyuudo:hover {
+  color: $danger;
+}
+
+.nav-tabs .nav-link-nyuudo:active {
+  border-bottom: solid 4px $danger;
+}
+
+.nav-tabs .nav-link-nyuudo:focus {
+  border-bottom: solid 4px $danger;
+}
+
 // import the whole library of sass
 @import "../node_modules/bootstrap/scss/bootstrap";
