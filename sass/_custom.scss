@@ -1,0 +1,26 @@
+/////// EJERCICI 1
+
+// google font
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap");
+$font-family-sans-serif: "Golos Text", sans-serif;
+
+// navbar fixed-top
+body {
+  padding-top: 104px;
+}
+
+// custom colors
+$primary: #fca311;
+$secondary: #14213d;
+$danger: #fb5859;
+
+// custom navbar menu
+$navbar-light-hover-color: $danger;
+$navbar-light-color: $secondary;
+$navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='15'><path fill='#{$navbar-light-color}' fill-rule='evenodd' d='M0 0h18v3H0V0zm0 6h18v3H0V6zm0 6h18v3H0v-3z'/></svg>");
+$navbar-light-toggler-border-color: none;
+$link-hover-color: $danger;
+$link-color: $secondary;
+
+// import the whole library of sass
+@import "../node_modules/bootstrap/scss/bootstrap";
