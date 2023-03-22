@@ -64,5 +64,16 @@ $accordion-button-active-bg: none;
 $accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='12'><path fill='none' stroke='#{$accordion-icon-color}' stroke-width='3' d='M1 1l8 8 8-8'/></svg>");
 $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='12'><path fill='none' stroke='#{$accordion-icon-active-color}' stroke-width='3' d='M1 1l8 8 8-8'/></svg>");
 
+// Just for Fun: testing merge function() with custom colors
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+
+$custom-nyuudo-colors: (
+  "funky": #859234,
+  "kinky": #078452,
+);
+
+$theme-colors: map-merge($custom-nyuudo-colors, $theme-colors);
+
 // import the whole library of sass
 @import "../node_modules/bootstrap/scss/bootstrap";
