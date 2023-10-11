@@ -1,31 +1,51 @@
-/////// EJERCICI 1
-
 // google font
-@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap");
-$font-family-sans-serif: "Golos Text", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap");
+$font-family-base: "Baloo 2", cursive;
 
-// navbar fixed-top
-body {
-  padding-top: 104px;
+// hero background image
+.bg-quantifake {
+  background-image: url(../assets/quantifake-background.webp);
+  width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  @media (min-width: 375px) {
+    height: 500px;
+  }
+
+  @media (min-width: 576px) {
+    height: 520px;
+  }
+
+  @media (min-width: 768px) {
+    height: 540px;
+  }
+
+  @media (min-width: 992px) {
+    height: 580px;
+  }
+
+  @media (min-width: 1200px) {
+    height: 600px;
+  }
 }
 
 // custom colors
-$primary: #fca311;
-$secondary: #14213d;
-$danger: #fb5859;
+$primary: #f1c40f;
+$secondary: #4bab98;
+$danger: #d35400;
+$dark: #347669;
 
 // custom navbar menu
-$navbar-light-hover-color: $danger;
+$navbar-light-hover-color: $primary;
 $navbar-light-color: $secondary;
 $navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='15'><path fill='#{$navbar-light-color}' fill-rule='evenodd' d='M0 0h18v3H0V0zm0 6h18v3H0V6zm0 6h18v3H0v-3z'/></svg>");
 $navbar-light-toggler-border-color: none;
-$link-hover-color: $danger;
-$link-color: $secondary;
-
-/////// EJERCICI 2
 
 // custom tabs
-.nav-tabs .nav-link-nyuudo {
+.nav-tabs .nav-link-quantifake {
   border-top: none;
   border-left: none;
   border-right: none;
@@ -34,46 +54,26 @@ $link-color: $secondary;
   background-color: white;
   margin: 0.5em 0.5em 0 0.5em;
   padding: 0.5rem;
+
+  &:hover {
+    color: $secondary;
+  }
+  &:active {
+    border-bottom: solid 4px $secondary;
+  }
+  &:focus {
+    border-bottom: solid 4px $secondary;
+  }
 }
-
-.nav-tabs .nav-link-nyuudo:hover {
-  color: $danger;
-}
-
-.nav-tabs .nav-link-nyuudo:active {
-  border-bottom: solid 4px $danger;
-}
-
-.nav-tabs .nav-link-nyuudo:focus {
-  border-bottom: solid 4px $danger;
-}
-
-/////// EJERCICI 3
-
-// custom card (Bootstrap insitu)
-
-/////// EJERCICI 4
 
 // custom accordion
 $accordion-color: $secondary;
 $accordion-button-focus-border-color: none;
 $accordion-button-focus-box-shadow: none;
 $accordion-icon-color: $primary;
-$accordion-icon-active-color: $danger;
+$accordion-icon-active-color: $secondary;
 $accordion-button-active-bg: none;
 $accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='12'><path fill='none' stroke='#{$accordion-icon-color}' stroke-width='3' d='M1 1l8 8 8-8'/></svg>");
 $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='12'><path fill='none' stroke='#{$accordion-icon-active-color}' stroke-width='3' d='M1 1l8 8 8-8'/></svg>");
 
-// Just for Fun: testing merge function() with custom colors
-@import "../node_modules/bootstrap/scss/_functions";
-@import "../node_modules/bootstrap/scss/_variables";
-
-$custom-nyuudo-colors: (
-  "funky": #859234,
-  "kinky": #078452,
-);
-
-$theme-colors: map-merge($custom-nyuudo-colors, $theme-colors);
-
-// import the whole library of sass
 @import "../node_modules/bootstrap/scss/bootstrap";

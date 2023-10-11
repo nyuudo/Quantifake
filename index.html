@@ -4,20 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="assets/favicon-32x32.png"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="css/main.min.css" />
-    <title>SPRINT 2</title>
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Quantifake©</title>
   </head>
   <body>
-    <!-- Ejercici 1 -->
     <nav class="navbar fixed-top navbar-expand-lg bg-white px-lg-5">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
-          ><img src="assets/logo-bookmark.svg" alt="BOOKMARK"
+          ><img src="./assets/quantifake-logo.svg" alt="Quantifake©"
         /></a>
         <button
           class="navbar-toggler"
@@ -36,13 +33,13 @@
               <a class="nav-link" href="#Features">FEATURES</a>
             </li>
             <li class="nav-item m-lg-4">
-              <a class="nav-link" href="#Pricing">PRICING</a>
+              <a class="nav-link" href="#Download">DOWNLOAD</a>
             </li>
             <li class="nav-item m-lg-4">
               <a class="nav-link" href="#Contact">CONTACT</a>
             </li>
             <li class="nav-item m-lg-4">
-              <button class="btn btn-sm btn-danger text-white px-4 py-2">
+              <button class="btn btn-sm btn-outline-dark px-4 py-2">
                 LOGIN
               </button>
             </li>
@@ -51,40 +48,32 @@
       </div>
     </nav>
 
-    <section>
+    <section
+      class="bg-quantifake d-flex align-items-center justify-content-center"
+    >
       <div class="container">
-        <div class="row align-items-center d-flex flex-wrap-reverse">
-          <div class="col-lg-6 px-4">
-            <h1>A Simple Bookmark Manager</h1>
-            <p class="lead my-4 text-muted">
-              A clean and simple interface to organize your favourite websites.
-              Open a new browser tab and see your sites load instantly. Try it
-              for free
-            </p>
-            <button class="btn btn-primary p-2">Get it on Chrome</button>
-            <button class="btn btn-light shadow p-2">Get it on Firefox</button>
-          </div>
-          <div class="col-lg-6">
-            <img
-              class="img-fluid"
-              src="assets/illustration-hero.svg"
-              alt="Hero Illustration"
-            />
-          </div>
+        <div class="text-center">
+          <img
+            class="img-fluid mb-3"
+            src="./assets/quantifake-logo-hero.svg"
+            alt="Quantifake©"
+          />
+          <h1 class="text-primary">
+            The data that <strong>lies</strong> within
+          </h1>
         </div>
       </div>
     </section>
 
-    <!-- Ejercici 2 -->
     <section id="Features">
-      <div class="container p-5">
+      <div class="container p-4">
         <div class="row">
           <div class="col-md-6 offset-md-3 text-center">
-            <h2>Features</h2>
+            <h2 class="text-secondary">Features</h2>
             <p class="lead my-4 text-muted">
               Our aim is to make it quick and easy for you to access your
-              favourite websites. Your bookmarks sync between your devices so
-              you can access them on the go.
+              quantified personal data. Your data will be sync between your
+              devices so you can access them on the go.
             </p>
           </div>
         </div>
@@ -95,7 +84,7 @@
             role="tablist"
           >
             <button
-              class="nav-link-nyuudo"
+              class="nav-link-quantifake"
               id="nav-simple-tab"
               data-bs-toggle="tab"
               data-bs-target="#nav-simple"
@@ -104,10 +93,10 @@
               aria-controls="nav-simple"
               aria-selected="true"
             >
-              Simple Bookmarking
+              Eugenics but for <strong>Good</strong>
             </button>
             <button
-              class="nav-link-nyuudo"
+              class="nav-link-quantifake"
               id="nav-speedy-tab"
               data-bs-toggle="tab"
               data-bs-target="#nav-speedy"
@@ -116,10 +105,10 @@
               aria-controls="nav-speedy"
               aria-selected="false"
             >
-              Speedy Searching
+              Success is a <strong>Science</strong>
             </button>
             <button
-              class="nav-link-nyuudo"
+              class="nav-link-quantifake"
               id="nav-easy-tab"
               data-bs-toggle="tab"
               data-bs-target="#nav-easy"
@@ -128,11 +117,11 @@
               aria-controls="nav-easy"
               aria-selected="false"
             >
-              Easy Sharing
+              <strong>Improof</strong> Yourself
             </button>
           </div>
         </nav>
-        <div class="tab-content" id="nav-tabContent">
+        <div class="tab-content bg-gradient" id="nav-tabContent">
           <div
             class="tab-pane fade show active"
             id="nav-simple"
@@ -140,23 +129,32 @@
             aria-labelledby="nav-simple-tab"
             tabindex="0"
           >
-            <div class="container p-lg-4">
+            <div class="container">
               <div class="row gx-lg-4 align-items-center d-flex">
                 <div class="col-lg-6 my-4">
                   <img
                     class="img-fluid"
-                    src="assets/illustration-features-tab-1.svg"
+                    src="./assets/QF-features-01.webp"
                     alt="Simple Bookmarking"
                   />
                 </div>
                 <div class="col-lg-6">
-                  <h2>Bookmark in one click</h2>
-                  <p class="lead my-4 text-muted">
-                    Organize Your bookmarks however you like. Our simple
-                    drag-and-drop interface gives you complete control over how
-                    you manage your favouirte sites.
-                  </p>
-                  <button class="btn btn-primary">More info</button>
+                  <h2 class="text-secondary mb-4">Measure the unmeasurable</h2>
+                  <div class="d-flex gap-3">
+                    <img src="./assets/icon-QF-01.svg" alt="Datasexual" />
+                    <div>
+                      <strong>Be Datasexual:</strong><br />
+                      All the data, none of the truth
+                    </div>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <img src="./assets/icon-QF-02.svg" alt="Social" />
+                    <div>
+                      <strong>Be Social:</strong><br />
+                      Presume of being well connected
+                    </div>
+                  </div>
+                  <button class="btn btn-primary mt-4">More info</button>
                 </div>
               </div>
             </div>
@@ -173,18 +171,27 @@
                 <div class="col-lg-6 my-4">
                   <img
                     class="img-fluid"
-                    src="assets/illustration-features-tab-2.svg"
+                    src="./assets/QF-features-02.webp"
                     alt="Speedy Searching"
                   />
                 </div>
                 <div class="col-lg-6">
-                  <h2>Intelligent search</h2>
-                  <p class="lead my-4 text-muted">
-                    Our powerful search feature will help you find saved sites
-                    in no time at all. No need to trawl through all of your
-                    bookmarks.
-                  </p>
-                  <button class="btn btn-primary">More info</button>
+                  <h2 class="text-secondary mb-4">Results ≠ Excuses</h2>
+                  <div class="d-flex gap-3">
+                    <img src="./assets/icon-QF-03.svg" alt="Playful" />
+                    <div>
+                      <strong>Be Playful:</strong><br />
+                      Measure life as a competition
+                    </div>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <img src="./assets/icon-QF-04.svg" alt="Helathy" />
+                    <div>
+                      <strong>Be Healthy:</strong><br />
+                      Geolocated Placebo for Your Mind
+                    </div>
+                  </div>
+                  <button class="btn btn-primary mt-4">More info</button>
                 </div>
               </div>
             </div>
@@ -201,18 +208,27 @@
                 <div class="col-lg-6 my-4">
                   <img
                     class="img-fluid"
-                    src="assets/illustration-features-tab-3.svg"
+                    src="./assets/QF-features-03.webp"
                     alt="Easy Sharing"
                   />
                 </div>
                 <div class="col-lg-6">
-                  <h2>Share your bookmarks</h2>
-                  <p class="lead my-4 text-muted">
-                    Easily share your bookmarks and collections with others.
-                    Create a shareable link that you can send at the click of a
-                    button.
-                  </p>
-                  <button class="btn btn-primary">More info</button>
+                  <h2 class="text-secondary mb-4">Meritocracy of the Data</h2>
+                  <div class="d-flex gap-3">
+                    <img src="./assets/icon-QF-05.svg" alt="Efficient" />
+                    <div>
+                      <strong>Be Efficient:</strong><br />
+                      Rise your Status by Quantification
+                    </div>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <img src="./assets/icon-QF-06.svg" alt="Social" />
+                    <div>
+                      <strong>Be Productive:</strong><br />
+                      Surveillance your own mediocrity
+                    </div>
+                  </div>
+                  <button class="btn btn-primary mt-4">More info</button>
                 </div>
               </div>
             </div>
@@ -220,19 +236,19 @@
         </div>
       </div>
     </section>
-    <!-- Ejercici 3 -->
-    <section id="Pricing">
-      <div class="container-lg mx-auto">
+
+    <section class="bg-primary-subtle bg-gradient" id="Download">
+      <div class="container-lg mx-auto p-5">
         <div class="row text-center">
           <div class="col-md-6 m-auto">
-            <h2>Download the extension</h2>
-            <p class="my-4 text-muted">
+            <h2 class="text-secondary">Download the extension</h2>
+            <p class="lead my-4 text-muted">
               We've got more browsers in the pipeline. Please so lets us now if
               You've got a favourite You'd like to prioritize.
             </p>
           </div>
         </div>
-        <!-- fila y columnas cards -->
+
         <div class="container">
           <div class="row px-lg-5">
             <div class="col mt-lg-0">
@@ -241,20 +257,20 @@
                 style="width: 18rem; height: 24rem"
               >
                 <img
-                  src="assets/logo-chrome.svg"
+                  src="./assets/logo-chrome.svg"
                   class="card-img-top m-auto pt-5"
                   style="width: 100px"
                   alt="logo Chrome"
                 />
                 <div class="card-body my-3">
                   <h5 class="card-title">Add to Chrome</h5>
-                  <p class="card-text text-muted">Minimum version 62</p>
+                  <p class="card-text text-muted">Minimum version 117</p>
                   <img
                     class="img-fluid my-4"
-                    src="assets/bg-dots.svg"
+                    src="./assets/bg-dots.svg"
                     alt="dots"
                   />
-                  <a href="#" class="btn btn-primary py-2 px-4"
+                  <a href="#" class="btn btn-secondary py-2 px-4"
                     >Add & Install Extension</a
                   >
                 </div>
@@ -266,20 +282,20 @@
                 style="width: 18rem; height: 24rem"
               >
                 <img
-                  src="assets/logo-firefox.svg"
+                  src="./assets/logo-firefox.svg"
                   class="card-img-top m-auto pt-5"
                   style="width: 100px"
                   alt="logo Firefox"
                 />
                 <div class="card-body my-3">
                   <h5 class="card-title">Add to Firefox</h5>
-                  <p class="card-text text-muted">Minimum version 55</p>
+                  <p class="card-text text-muted">Minimum version 118.0.2</p>
                   <img
                     class="img-fluid my-4"
                     src="assets/bg-dots.svg"
                     alt="dots"
                   />
-                  <a href="#" class="btn btn-primary py-2 px-4"
+                  <a href="#" class="btn btn-secondary py-2 px-4"
                     >Add & Install Extension</a
                   >
                 </div>
@@ -291,20 +307,20 @@
                 style="width: 18rem; height: 24rem"
               >
                 <img
-                  src="assets/logo-opera.svg"
+                  src="./assets/logo-arc.svg"
                   class="card-img-top m-auto pt-5"
                   style="width: 100px"
                   alt="logo Opera"
                 />
                 <div class="card-body my-3">
-                  <h5 class="card-title">Add to Opera</h5>
-                  <p class="card-text text-muted">Minimum version 46</p>
+                  <h5 class="card-title">Add to Arc</h5>
+                  <p class="card-text text-muted">Minimum version 1.11.0</p>
                   <img
                     class="img-fluid my-4"
-                    src="assets/bg-dots.svg"
+                    src="./assets/bg-dots.svg"
                     alt="dots"
                   />
-                  <a href="#" class="btn btn-primary py-2 px-4"
+                  <a href="#" class="btn btn-secondary py-2 px-4"
                     >Add & Install Extension</a
                   >
                 </div>
@@ -314,12 +330,12 @@
         </div>
       </div>
     </section>
-    <!-- Ejercici 4 -->
+
     <section>
       <div class="container text-center p-5">
         <div class="row">
           <div class="col-md-6 offset-md-3">
-            <h2>Frequently Asked Questions</h2>
+            <h2 class="text-secondary">Frequently Asked Questions</h2>
             <p class="lead my-4 text-muted">
               Here are some of our FAQs. If You have any other questions you'd
               like answered please feel free to email us.
@@ -335,7 +351,7 @@
                     aria-expanded="false"
                     aria-controls="flush-collapseOne"
                   >
-                    What is Bookmark?
+                    What is Quantifake?
                   </button>
                 </h2>
                 <div
@@ -345,10 +361,9 @@
                   data-bs-parent="#accordionFlushExample"
                 >
                   <div class="accordion-body text-muted text-start">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Unde porro qui repudiandae omnis modi veniam dignissimos eum
-                    animi, cumque reprehenderit veritatis, vel similique, magni
-                    fuga commodi nisi vero eius minus.
+                    An excuse to collect more data that you are actually giving
+                    away to multinational corporations. The difference is that
+                    with Quantifake you can practically give made up data.
                   </div>
                 </div>
               </div>
@@ -362,7 +377,7 @@
                     aria-expanded="false"
                     aria-controls="flush-collapseTwo"
                   >
-                    How can I request a new browser?
+                    Isn't GAFAM already collecting my data?
                   </button>
                 </h2>
                 <div
@@ -372,10 +387,11 @@
                   data-bs-parent="#accordionFlushExample"
                 >
                   <div class="accordion-body text-muted text-start">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Unde porro qui repudiandae omnis modi veniam dignissimos eum
-                    animi, cumque reprehenderit veritatis, vel similique, magni
-                    fuga commodi nisi vero eius minus.
+                    Yes, Google, Amazon, Apple, Meta and Microsoft are dealing
+                    with huge amounts of data in order to squeeze until the very
+                    last drop of benefits that could be comodified from your
+                    online activities, but at least with Quantifake You can make
+                    yourself believe that You are in control.
                   </div>
                 </div>
               </div>
@@ -399,10 +415,9 @@
                   data-bs-parent="#accordionFlushExample"
                 >
                   <div class="accordion-body text-muted text-start">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Unde porro qui repudiandae omnis modi veniam dignissimos eum
-                    animi, cumque reprehenderit veritatis, vel similique, magni
-                    fuga commodi nisi vero eius minus.
+                    Is in the works but first We need to deal with many
+                    confusing set of technologies that are not standarized to
+                    protect Silicon Valley moguls from themselves.
                   </div>
                 </div>
               </div>
@@ -416,7 +431,7 @@
                     aria-expanded="false"
                     aria-controls="flush-collapseFour"
                   >
-                    What about other Chromium browsers?
+                    What about Data Governance?
                   </button>
                 </h2>
                 <div
@@ -426,26 +441,27 @@
                   data-bs-parent="#accordionFlushExample"
                 >
                   <div class="accordion-body text-muted text-start">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Unde porro qui repudiandae omnis modi veniam dignissimos eum
-                    animi, cumque reprehenderit veritatis, vel similique, magni
-                    fuga commodi nisi vero eius minus.
+                    C'mon! are You really concerned about that? Aren't You that
+                    kind of people who says that doesn't have anything to hide?
+                    Relax, there's worse problems than that in the world.
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <button class="btn btn-primary px-4 py-2 m-5">More info</button>
+        <button class="btn btn-primary m-3">More info</button>
       </div>
     </section>
-    <!-- Contact Form -->
+
     <section id="Contact" class="bg-primary p-5">
       <div class="container text-center">
         <div class="row">
           <div class="col-md-6 offset-md-3">
             <p class="text-sm-center text-white">35,000 + ALREADY JOINED</p>
-            <h3 class="text-white">Stay up-to-date with what we're doing</h3>
+            <h3 class="text-secondary">
+              Stay up-to-date with what we're scheming
+            </h3>
             <form class="row align-self-center justify-content-center p-3">
               <div class="col-lg-auto p-1">
                 <label for="email" class="visually-hidden text-center"
@@ -459,7 +475,7 @@
                 />
               </div>
               <div class="col-lg-auto p-1">
-                <button type="submit" class="btn btn-danger text-white">
+                <button type="submit" class="btn btn-secondary text-white">
                   Contact Us
                 </button>
               </div>
@@ -468,39 +484,48 @@
         </div>
       </div>
     </section>
-    <!-- Footer Section -->
+
     <footer>
-      <nav class="navbar navbar-expand-lg p-5 bg-secondary">
+      <nav class="navbar navbar-expand-lg p-5 bg-dark">
         <div
-          class="container text-center d-flex flex-lg-row flex-sm-column justify-content-center align-content-center"
+          class="container text-center m-4 m-lg-0 d-flex flex-lg-row flex-sm-column justify-content-evenly align-content-end"
         >
           <a class="navbar-brand" href="#"
-            ><img src="assets/logo-bookmark-white.svg" alt="logo-bookmark"
+            ><img src="./assets/quantifake-logo-white.svg" alt="Quantifake©"
           /></a>
-          <ul class="navbar-nav me-sm-auto mb-2 mb-lg-0">
-            <li class="nav-item mx-3">
-              <a class="nav-link text-white" href="#">FEATURES</a>
+          <ul class="navbar-nav me-sm-auto m-lg-4 pt-md-2 pb-md-0 px-md-0 py-4">
+            <li class="nav-item">
+              <a class="nav-link" href="#Features">FEATURES</a>
             </li>
-            <li class="nav-item mx-3">
-              <a class="nav-link text-white" href="#">PRICING</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#Download">DOWNLOAD</a>
             </li>
-            <li class="nav-item mx-3">
-              <a class="nav-link text-white" href="#">CONTACT</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">CONTACT</a>
             </li>
           </ul>
-          <!-- Social Media-->
           <div
             class="container d-flex justify-content-center justify-content-lg-end"
           >
-            <ul class="row">
+            <ul class="row list-unstyled">
               <li class="col nav-item">
                 <a class="nav-link" href="#"
-                  ><img src="assets/icon-facebook.svg" alt="logo facebook"
+                  ><img src="./assets/icon-facebook.svg" alt="Facebook"
                 /></a>
               </li>
               <li class="col nav-item">
                 <a class="nav-link" href="#"
-                  ><img src="assets/icon-twitter.svg" alt="logo twitter"
+                  ><img src="./assets/icon-youtube.svg" alt="YouTube"
+                /></a>
+              </li>
+              <li class="col nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="./assets/icon-tiktok.svg" alt="TikTok"
+                /></a>
+              </li>
+              <li class="col nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="./assets/icon-instagram.svg" alt="Instagram"
                 /></a>
               </li>
             </ul>
@@ -509,7 +534,6 @@
       </nav>
     </footer>
 
-    <!-- modulo JAVASCRIPT Bootstrap -->
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
