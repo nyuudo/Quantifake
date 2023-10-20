@@ -2,6 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap");
 $font-family-base: "Baloo 2", cursive;
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 6.5rem;
+}
+
 // hero background image
 .bg-quantifake {
   background-image: url(../assets/quantifake-background.webp);
